@@ -18,7 +18,7 @@ select = Select(dropdownInHerokuapp)
 select.select_by_visible_text('Option 2')
 NumberOfDropDowns = len(select.options)
 print(NumberOfDropDowns)
-expectedCount =3
+expectedCount =2
 if NumberOfDropDowns==expectedCount:
     print("DropDownSateCount is correct")
 else:
