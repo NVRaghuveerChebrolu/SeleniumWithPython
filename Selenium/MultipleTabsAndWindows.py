@@ -25,4 +25,3 @@ FirstTab= driver.window_handles[0]
 if current_tab != FirstTab:
     driver.switch_to.window(FirstTab)
     driver.find_element(By.XPATH,"//span[normalize-space()='Downloads']").click()
-
