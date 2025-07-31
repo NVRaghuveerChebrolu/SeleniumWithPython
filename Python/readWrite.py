@@ -16,4 +16,3 @@ print(file.read(3))
 
 for line in file.readlines():
     print(line)
-
