@@ -1,8 +1,8 @@
 import time
 
 from selenium import webdriver
-
-driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+driver = webdriver.Chrome()
+# driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
 driver.get("https://www.makemytrip.com/")
 driver.find_element_by_id("fromCity").click()
 driver.find_element_by_css_selector("input[placeholder='From']").send_keys("del")
@@ -14,8 +14,4 @@ for city in cities:
         city.click()
         break
 
-
 driver.find_element_by_xpath("//p[text()='Delhi, India']").click()
-
-
-
